@@ -56,9 +56,6 @@ public class Questao23 {
 		
 		tipoCarne(carne, quantcarne, pagamentocartaotabajara);
 		
-		
-		
-
 	}
 
 }
