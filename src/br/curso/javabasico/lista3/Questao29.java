@@ -6,7 +6,10 @@ public class Questao29 {
 
 	public static void listarprimos(int num) {
 		boolean primo;
+		String output = "Números primos: ";
 
+		System.out.print(output);
+		
 		for (int i = 1; i <= num; i++) {
 
 			primo = true;
@@ -19,9 +22,11 @@ public class Questao29 {
 			}
 
 			if (primo) {
+				
 				System.out.print(i + " ");
 			}
 		}
+		
 	}
 
 	public static void main(String[] args) {

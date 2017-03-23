@@ -21,16 +21,16 @@ public class Questao16 {
 		double delta = Math.pow(b, 2) - 4 * (a * c);
 
 		if (delta >= 0) {
-			double raiz1 = (-b + Math.sqrt(delta)) / 2;
+			double raiz1 = ((-b) + Math.sqrt(delta)) / 2;
 			String r1 = String.format("%.2f", raiz1); /* Deixando só com dois digitos um double*/
 
-			double raiz2 = (-b - Math.sqrt(delta)) / 2;
+			double raiz2 = ((-b) - Math.sqrt(delta)) / 2;
 			String r2 = String.format("%.2f", raiz2);
 
-			System.out.println("As raizes da equação de segundo grau é: " + r1 + " e " + r2);
+			System.out.println("Delta:"+delta+"\nAs raizes da equação de segundo grau é: " + r1 + " e " + r2);
 
 		} else {
-			System.out.println("A equação não possui raizes.");
+			System.out.println("A equação não possui raizes, delta negativo");
 		}
 	}
 

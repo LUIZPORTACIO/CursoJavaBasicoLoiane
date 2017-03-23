@@ -5,19 +5,15 @@ import java.util.Scanner;
 public class Questao17 {
 
 	public static void calcfatorial(int numfator) {
-		int n = numfator;
-		int resultado = 0;
-		int sum = 0;
-		
-		  while (n != 0){
-				resultado = numfator * n;
-				n--;
-				sum = sum+resultado;
-				
-				System.out.print(numfator+" x "+(n+1)+" = "+resultado+" ");
-				
-		  }
-		  System.out.println("\tO fatorial é "+sum);
+		int i = numfator;
+		int fatorial = 1;
+
+		while (i > 0) {
+			fatorial *= i;
+			i--;
+		}
+
+		System.out.println("\nO fatorial de " + numfator + " é " + fatorial);
 	}
 
 	public static void main(String[] args) {

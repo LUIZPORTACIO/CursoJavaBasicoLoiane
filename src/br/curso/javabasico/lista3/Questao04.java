@@ -7,16 +7,18 @@ public class Questao04 {
 		Double popA = 80000.0;
 		Double popB = 200000.0;
 		do {
-			
-			popA = popA + (0.03 * popA);
+		
+			popA += (0.03 * popA);
 
-			popB = popB + (0.015 * popB);
+			popB += (0.015 * popB);
 
 			cont++;
 
-			System.out.println("Foram: " + cont + " anos");
+			System.out.println("População A: "+popA+"\tPopulação B: "+popB+"\tAno: "+cont);
+	
 		} while (popA <= popB);
 		
+		System.out.println("Foram: " + cont + " anos");
 	}
 
 }

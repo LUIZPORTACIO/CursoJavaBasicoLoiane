@@ -14,8 +14,10 @@ public class Questao33 {
 
 		for (double i = 1, j = 1; i <= n; i++, j += 2) {
 			
-			soma += i/j;
 			System.out.print(i+"/"+j+" + ");
+			
+			soma += i/j;
+			
 		}
 
 		String resultado = String.format("%.3f", soma);//Conversão para o formato (0,000)

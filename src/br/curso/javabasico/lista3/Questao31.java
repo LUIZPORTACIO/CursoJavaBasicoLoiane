@@ -9,18 +9,23 @@ import java.util.Scanner;
 public class Questao31 {
 
 	public static void calculasalario(double salarioano95) {
-		double percaumento = 0.015;
-		double salario = salarioano95+(percaumento*salarioano95);
+		double percaumento = 1.5;
+		double salario = salarioano95+(percaumento*(salarioano95/100));
 		int anoatual = GregorianCalendar.getInstance().get(Calendar.YEAR);//Forma de colocar o ano atual
-		DecimalFormat forma = new DecimalFormat("0.00");//Arredondar para duas casas decimais
+		DecimalFormat forma = new DecimalFormat("###,###.##");//Arredondar para duas casas decimais
 		
-		for (int i = 1996; i <= anoatual ; i++) {
-			salario = salario+(percaumento*salario);
+		System.out.println(forma.format(salario) +" ano: 1996 "+" percentual de aumento: "+ percaumento+"%");
+		
+		for (int i = 1997; i <= anoatual ; i++) {
 			
-			System.out.println(forma.format(salario) +" i "+i+" percaumento "+ percaumento);
-			percaumento = 2*percaumento;
+			percaumento *=2;
+			
+			salario += percaumento*(salario/100);
+			
+			System.out.println(forma.format(salario) +" ano: "+i+" percentual de aumento: "+ percaumento+"%");
+			
 		}
-		System.out.println("o salario no ano "+anoatual+ " é de: "+ forma.format(salario));
+		System.out.println("\nO salario no ano "+anoatual+ " é de: "+ forma.format(salario));
 		
 	}
 	

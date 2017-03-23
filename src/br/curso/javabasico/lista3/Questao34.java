@@ -12,6 +12,7 @@ public class Questao34 {
 			System.out.println("H:"+1/i);
 			resultado += 1/i;
 		}
+		
 		String result = String.format("%.3f", resultado);
 		System.out.println("A soma de "+n+" termos "+"é de :"+result);
 	}

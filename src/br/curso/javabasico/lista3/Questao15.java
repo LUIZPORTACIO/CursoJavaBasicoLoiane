@@ -1,5 +1,7 @@
 package br.curso.javabasico.lista3;
 
+import java.util.Scanner;
+
 /*Serie de Fibonnaci*/
 public class Questao15 {
 
@@ -28,7 +30,9 @@ public class Questao15 {
 
 	public static void main(String[] args) {
 
-		serieFibonaci(10);
+		System.out.println("Digite o n-ensimo termo:");
+		int n = new Scanner(System.in).nextInt();
+		serieFibonaci(n);
 
 	}
 

@@ -16,26 +16,25 @@ public class Questao12 {
 		System.out.println("Salario Bruto: " + salarioBruto + "\nSindicato: " + dSindicato + "\nIRRF(perc.): " + percIRRF
 				+ "\nIRRF: " + dIRRF + "\nINSS: " + dINSS + "\nFGTS: " + dFGTS + "\nTotal de descontos: " + descontos
 				+ "\nSalario liquido: " + salarioLiquido);
-
 	}
 
 	public static void calculaSalario(Double salarioBruto) {
 
+		Double percIRRF = 0.0;
 		if (salarioBruto <= 900) {
-			Double percIRRF = 0.0;
+			percIRRF = 0.0;
 			descontosEmFolha(salarioBruto, percIRRF);
 
 		} else if (salarioBruto > 900 && salarioBruto <= 1500) {
-			Double percIRRF = 0.05;
+			percIRRF = 0.05;
 			descontosEmFolha(salarioBruto, percIRRF);
 		} else if (salarioBruto > 1500 && salarioBruto <= 2500) {
-			Double percIRRF = 0.10;
+			percIRRF = 0.10;
 			descontosEmFolha(salarioBruto, percIRRF);
 		} else if (salarioBruto > 2500) {
-			Double percIRRF = 0.20;
+			percIRRF = 0.20;
 			descontosEmFolha(salarioBruto, percIRRF);
 		}
-
 	}
 
 	public static void main(String[] args) {
@@ -46,5 +45,4 @@ public class Questao12 {
 		Double salarioBruto = quantHorastrabalhas * valHorastrabalhas;
 		calculaSalario(salarioBruto);
 	}
-
 }

@@ -6,10 +6,10 @@ public class Questao13 {
 
 	public static void numelevadoaexp(int base, int expoente) {
 
-		int resultado=1;
-		for (int i = 1; i <= expoente; i++) {
+		int resultado = base;
+		for (int i = 1; i < expoente; i++) {
 
-			resultado = resultado * base;
+			resultado *= base;
 			System.out.print(resultado + " ");
 		}
 		

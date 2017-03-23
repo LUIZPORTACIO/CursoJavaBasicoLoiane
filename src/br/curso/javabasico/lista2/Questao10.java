@@ -21,7 +21,7 @@ public class Questao10 {
 
 		default:
 			System.out.println("Turno invalido");
-			break;
+			
 		}
 		
 	}

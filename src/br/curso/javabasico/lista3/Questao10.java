@@ -8,11 +8,11 @@ public class Questao10 {
 
 		for (int i = numinicial; i <= numfinal; i++) {
 
-			if (i < (numfinal - 1)) {
+			if (i < (numfinal-1)) {
 				System.out.print((1 + i) + " ");
 			}
 		}
-	}
+	} // Mostra só os números do intervalo, sem o num inicial e final
 
 	public static void main(String[] args) {
 		System.out.println("Digite o numero inicial:");

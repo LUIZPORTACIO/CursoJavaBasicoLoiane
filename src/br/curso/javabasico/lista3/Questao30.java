@@ -15,7 +15,7 @@ public class Questao30 {
 			fatorfinal = new Scanner(System.in).nextInt();
 		}
 
-		System.out.println("Tabuada de "+num+" fator inicial: "+fatorinicial+" fator final: "+fatorfinal );
+		System.out.println("Tabuada de "+num+" fator inicial: "+fatorinicial+" fator final: "+fatorfinal+"\n" );
 		for (int i = fatorinicial; i <= fatorfinal; i++) {
 			System.out.println(num + " * " + i + " = " + (num * i));
 		}

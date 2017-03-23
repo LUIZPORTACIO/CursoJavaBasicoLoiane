@@ -9,13 +9,11 @@ public class Questao05 {
 
 			int numano = 0;
 			while (popA <= popB) {
-				popA = popA + (popA * (txA / 100));
-				popB = popB + (popB * (txB / 100));
+				popA += (popA * (txA / 100));
+				popB += (popB * (txB / 100));
 				numano++;
-
-				System.out.println("Foram: " + numano + " anos" + "\nPopulação A: " + popA + "\tPopulação B: " + popB);
-
 			}
+			System.out.println("Foram: " + numano + " anos" + "\nPopulação A: " + popA + "\tPopulação B: " + popB);
 
 		} else {
 			System.out.println("A população A já é maior ou igual a população B");

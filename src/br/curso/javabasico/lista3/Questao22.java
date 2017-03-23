@@ -6,14 +6,17 @@ public class Questao22 {
 
 	public static void inventariocolecao(int numCD) {
 		double soma = 0.0;
+		double valorCD;
+		double valormedioCD;
+		
 		for (int i = 0; i < numCD; i++) {
 			System.out.println("Qual o valor pago em cada CD? ");
-			double valorCD = new Scanner(System.in).nextDouble();
+			valorCD = new Scanner(System.in).nextDouble();
 			soma = soma + valorCD;
 		}
-		double valormedioCD = soma / numCD;
-		System.out.println("O valor investido na coleção é de " + soma + "\nValor em média gasto em cada CD é de "
-				+ valormedioCD);
+		valormedioCD = soma / numCD;
+		System.out.println(
+				"O valor investido na coleção é de " + soma + "\nValor em média gasto em cada CD é de " + valormedioCD);
 
 	}
 

@@ -7,7 +7,9 @@ public class Questao20 {
 	public static void faixaetaria() {
 		String decisao = null;
 		int cont = 0;
-		int soma = 0;
+		double soma = 0;
+		double mediaidade;
+		
 		do {
 			System.out.println("Qual a idade da pessoa ?  ");
 			int pessoaidade = new Scanner(System.in).nextInt();
@@ -18,18 +20,18 @@ public class Questao20 {
 			soma = soma+pessoaidade;
 			cont=cont+1;	
 
-		} while (decisao.equalsIgnoreCase("Sim"));
+		} while (decisao.equalsIgnoreCase("Sim")||decisao.equalsIgnoreCase("S") );
 
-		int mediaidade = soma / cont;
+		mediaidade = soma / cont;
 
 		if (mediaidade <= 25) {
-			System.out.println("turma jovem"+" "+mediaidade);
+			System.out.println("Turma jovem."+" Média de idade: "+String.format("%.3f", mediaidade));
 		}
 		if (mediaidade > 25 && mediaidade <= 60) {
-			System.out.println("turma adulta"+" "+mediaidade);
+			System.out.println("Turma adulta."+" Média de idade: "+String.format("%.3f", mediaidade));
 		}
 		if (mediaidade > 60) {
-			System.out.println("turma idosa"+" "+mediaidade);
+			System.out.println("Turma idosa."+" Média de idade: "+String.format("%.3f", mediaidade));
 		}
 
 	}

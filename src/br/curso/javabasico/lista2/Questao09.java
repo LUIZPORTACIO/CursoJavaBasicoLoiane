@@ -27,7 +27,7 @@ public class Questao09 {
 		int n1 = new Scanner(System.in).nextInt();
 		int n2 = new Scanner(System.in).nextInt();
 		int n3 = new Scanner(System.in).nextInt();
-		
+
 		System.out.println("Números em ordem decrescente");
 
 		ordemdecescente(n1, n2, n3);

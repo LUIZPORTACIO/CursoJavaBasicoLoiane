@@ -13,8 +13,8 @@ public class Questao18 {
 			if ((num % i == 0) && (num != i)) {
 				eprimo = false;
 				divisor = i;
-				
-				System.out.print(divisor+" ");
+
+				System.out.print(divisor + " ");
 			}
 		}
 

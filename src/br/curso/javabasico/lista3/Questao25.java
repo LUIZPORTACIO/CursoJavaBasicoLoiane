@@ -10,6 +10,9 @@ public class Questao25 {
 		Double soma = 0.0;
 		double valorpedido;
 		int quantprod = 1;
+		Double dinheirocliente, troco;
+		
+		
 		do {
 			System.out.println("Qual o valor do item ?");
 			valorpedido = new Scanner(System.in).nextDouble();
@@ -20,8 +23,8 @@ public class Questao25 {
 
 		System.out.println(
 				"O valor total: " + NumberFormat.getCurrencyInstance().format(soma) + "\nQual o dinheiro do cliente ?");
-		Double dinheirocliente = new Scanner(System.in).nextDouble();
-		Double troco = dinheirocliente - soma;
+		dinheirocliente = new Scanner(System.in).nextDouble();
+		troco = dinheirocliente - soma;
 		System.out.println("Pedido: " + NumberFormat.getCurrencyInstance().format(soma) + "\nDinheiro: "
 				+ NumberFormat.getCurrencyInstance().format(dinheirocliente) + "\nTroco: "
 				+ NumberFormat.getCurrencyInstance().format(troco));

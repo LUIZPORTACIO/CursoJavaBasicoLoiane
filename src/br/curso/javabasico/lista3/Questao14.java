@@ -7,7 +7,7 @@ public class Questao14 {
 	public static void contarpareseimpares() {
 		int contpar = 0;
 		int contimpar = 0;
-		int num = 0;
+		int num;
 		for (int i = 0; i < 10; i++) {
 
 			System.out.println("Digite um número");

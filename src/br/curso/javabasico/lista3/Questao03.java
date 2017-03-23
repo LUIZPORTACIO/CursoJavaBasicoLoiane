@@ -1,31 +1,35 @@
 package br.curso.javabasico.lista3;
 
+import java.text.NumberFormat;
 import java.util.Scanner;
 
 public class Questao03 {
-	
-	public static void validainfo(String nome, int idade, double salario,  String sexo, String ecivil) {
-		while (nome.length()<3) {
+
+	public static void validainfo(String nome, int idade, double salario, String sexo, String ecivil) {
+		while (nome.length() <= 3) {
 			System.out.println("Troque o nome");
 			nome = new Scanner(System.in).next();
 		}
-		while (idade > 150) {
+		while (idade < 1 || idade > 150) {
 			System.out.println("Troque a idade");
 			idade = new Scanner(System.in).nextInt();
-		}	
+		}
 		while (salario == 0) {
 			System.out.println("Troque o salario");
 			salario = new Scanner(System.in).nextDouble();
-		}	
-		while (!sexo.equals("f")&&!sexo.equals("m")) {
-			System.out.println("Troque o sexo");
+		}
+		while (!sexo.equalsIgnoreCase("f") && !sexo.equalsIgnoreCase("m")) {
+			System.out.println("Troque o sexo (F ou M)");
 			sexo = new Scanner(System.in).next();
 		}
-		while (!ecivil.equals("s")&&!ecivil.equals("c")&&!ecivil.equals("v")&&!ecivil.equals("d")) {
-			System.out.println("Troque o estado civil");
+		while (!ecivil.equalsIgnoreCase("s") && !ecivil.equalsIgnoreCase("c") && !ecivil.equalsIgnoreCase("v")
+				&& !ecivil.equalsIgnoreCase("d")) {
+			System.out.println("Troque o estado civil (S, C, V, D)");
 			ecivil = new Scanner(System.in).next();
 		}
-	System.out.println("Nome: "+nome+"\tIdade: "+idade+"\tSalario: "+salario+"\nSexo: "+sexo+"\tEstado Civil: "+ecivil);
+		System.out.println("Cadastro realizado." + "\nNome: " + nome.toUpperCase() + "\tIdade: " + idade + "\tSalario: "
+				+ NumberFormat.getCurrencyInstance().format(salario) + "\tSexo: " + sexo.toUpperCase()
+				+ "\tEstado Civil: " + ecivil.toUpperCase());
 	}
 
 	public static void main(String[] args) {
@@ -39,9 +43,8 @@ public class Questao03 {
 		String sexo = new Scanner(System.in).next();
 		System.out.println("Estado Civil: ");
 		String ecivil = new Scanner(System.in).next();
-		
+
 		validainfo(nome, idade, salario, sexo, ecivil);
-		
 
 	}
 

@@ -6,9 +6,10 @@ public class Questao12 {
 
 	public static void geradortabuada(int num) {
 		
+		int resultado;
 		for (int i = 1; i <= 10; i++) {
 			
-			int resultado = num*i;
+			resultado = num*i;
 			System.out.println(num+" x "+i+" = "+resultado);
 		}
 		
