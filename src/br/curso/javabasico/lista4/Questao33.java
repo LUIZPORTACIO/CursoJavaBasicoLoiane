@@ -23,6 +23,8 @@ public class Questao33 {
 				if (vetA[i] % j == 0) {
 					eprimo = false;
 				}
+				//System.out.println("--"+vetA[i]+"dividido por "+j);
+				//Mostra que um número primo é divisivel por um e por ele mesmo
 			}
 
 			msg = "";
