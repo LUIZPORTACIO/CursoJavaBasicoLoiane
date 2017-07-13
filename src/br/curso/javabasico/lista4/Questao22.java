@@ -1,5 +1,7 @@
 package br.curso.javabasico.lista4;
 
+/*Tem que colocar um n ou nenhum número no final do Math.random() para que a randomização fique entre 0 e 1, 
+caso haja outro número a randomização é feita de 0 a esse número*/
 
 public class Questao22 {
 	
@@ -10,11 +12,10 @@ public class Questao22 {
 		
 		for (int i = 0; i < vetorA.length; i++) {
 			
-			vetorA[i] = (int) Math.round(Math.random()*1);
-			
+			vetorA[i] = (int) Math.round(Math.random()*1); 
 			if (vetorA[i]==0) {
 				contzero++;
-			} else {
+			} else if (vetorA[i]==1) {
 				contum++;
 			}
 			
@@ -22,7 +23,7 @@ public class Questao22 {
 		}
 		
 		System.out.println("\nO percentual de zeros: "+(100*(contzero/10))+"\nO percentual de um: "+(100*(contum/10)));
-			
+		
 	}
 	
 	public static void main(String[] args) {

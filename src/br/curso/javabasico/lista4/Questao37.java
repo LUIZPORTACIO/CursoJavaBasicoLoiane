@@ -6,7 +6,7 @@ public class Questao37 {
 
 	public static int fatorial(int valor) {
 		return ((valor <= 1) ? 1 : (valor * fatorial(valor - 1)));//usando a recursividade para realizar o fatorial
-
+	
 	}
 
 	public static void vetbfatorialdeveta(int[] vetA, int[] vetB) {
@@ -37,3 +37,11 @@ public class Questao37 {
 	}
 
 }
+
+/* 
+ * Outra maneira de calcular o fatorial
+ * valorB = 0
+ for(int j =1; j<= valorA; j++){
+ valorB *=j;
+ }
+ */

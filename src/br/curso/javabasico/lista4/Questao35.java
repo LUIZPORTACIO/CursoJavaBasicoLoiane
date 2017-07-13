@@ -14,14 +14,15 @@ public class Questao35 {
 
 		for (int i = 0; i < vetores.length; i++) {
 
-			System.out.println("Valor vetor: " + vetores[i] + "\ndivisores:  ");
+			System.out.print("Valor vetor: " + vetores[i] + " divisores: ");
 
 			for (int j = 1; j <= vetores[i]; j++) {
 
 				if (vetores[i] % j == 0) {
-					System.out.println(j + " ");
+					System.out.print(j + " ");
 				}
 			}
+			System.out.println( );
 
 		}
 

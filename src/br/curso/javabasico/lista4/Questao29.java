@@ -19,12 +19,14 @@ public class Questao29 {
 			System.out.println("Digite o vetor B " + (i + 1));
 			vetB[i] = new Scanner(System.in).nextInt();
 
-			vetC[vetC.length + i - 10] = vetB[i];
+			vetC[vetA.length + i] = vetB[i];
 		}
 
 		for (int i = 0; i < vetC.length; i++) {
 			System.out.println("Vetor C: " + vetC[i] + "\tPosição: " + (i + 1));
 		}
+		
+		System.out.println( );
 
 		for (int i = 0; i < vetA.length; i++) {
 			System.out.println("Vetor A: " + vetA[i] + "\tVetor B: " + vetB[i]);
@@ -33,8 +35,8 @@ public class Questao29 {
 
 	public static void main(String[] args) {
 		int[] vetA = new int[10];
-		int[] vetB = new int[10];
-		int[] vetC = new int[20];
+		int[] vetB = new int[vetA.length];
+		int[] vetC = new int[2*vetA.length];
 
 		buildvetC(vetA, vetB, vetC);
 	}

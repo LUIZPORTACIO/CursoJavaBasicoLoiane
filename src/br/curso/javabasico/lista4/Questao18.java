@@ -4,41 +4,55 @@ import java.util.Scanner;
 
 public class Questao18 {
 
-	public static void selecionarmaiormenoridade(int[] grupidade) {
+	public static void selecionarmaiormenoridade(int[] grupidades) {
 
-		int posmenor = 0;
-		int posmaior = 0;
-		int maior = Integer.MIN_VALUE; //Menor valor, por que qualquer valor vai ser maior que ele
-		int menor = Integer.MAX_VALUE; //Maior valor, por que qualquer valor vai ser menor que ele
+		// int maior = Integer.MIN_VALUE; //Menor valor, por que qualquer valor
+		// vai ser maior que ele
+		// int menor = Integer.MAX_VALUE; //Maior valor, por que qualquer valor
+		// vai ser menor que ele
+
+		
 
 		System.out.println("Digite a idade dos membros de seu grupo: ");
 
-		for (int i = 0; i < grupidade.length; i++) {
+		for (int i = 0; i < grupidades.length; i++) {
 
-			grupidade[i] = new Scanner(System.in).nextInt();
+			grupidades[i] = new Scanner(System.in).nextInt();
 
-			if (grupidade[i] < menor) {
-				menor = grupidade[i];
-				posmenor = i;
-			}
-
-			if (grupidade[i] > maior) {
-				maior = grupidade[i];
-				posmaior = i;
-			}
 		}
 
-		System.out.println("O menor valor é: " + menor + " na posição: " + posmenor + "\nO maior valor é: " + maior
-				+ " na posição: " + posmaior);
+		int posmenor = 0;					// Essas variáveis tem que estar depois de rodar o for de pedidos de idades, para que nunca o menor valor fique zerado.
+		int posmaior = 0;
+		int menor = grupidades[0];
+		int maior = grupidades[0];
+		
+		for (int i = 0; i < grupidades.length; i++) {
+			if (grupidades[i] > maior) {
+				maior = grupidades[i];
+				posmaior = i;
+			} else if (grupidades[i] < grupidades[i]) {
+				menor = grupidades[i];
+				posmenor = i;
+			}			
+ 
+		}
+		
+		System.out.print("O grupo de idades: ");
 
+		for (int i = 0; i < grupidades.length; i++) {
+			System.out.print(grupidades[i] + " ");
+		}
+
+		System.out.println();
+
+		System.out.println("O maior valor é: " + maior + " na posição: " + posmaior+"\nO menor valor é: " + menor + " na posição: " + posmenor);
 	}
 
 	public static void main(String[] args) {
 
-		int[] grupidade = new int[10];
-		
-		selecionarmaiormenoridade(grupidade);
+		int[] grupidades = new int[10];
+
+		selecionarmaiormenoridade(grupidades);
 
 	}
-
 }

@@ -14,16 +14,16 @@ public class Questao34 {
 
 		for (int i = 0; i < vetA.length; i++) {
 
-			System.out.println("Valor vetor: " + vetA[i]+"\nelementos pares:  ");
+			System.out.print("Valor vetor: " + vetA[i]+" elementos pares: ");
 
-			for (int j = 0; j < vetA[i]; j++) {
+			for (int j = 2; j <=vetA[i]; j++) {
 
 				
 				if (j % 2 == 0) {
-					System.out.println(j + " ");
+					System.out.print(j + " ");
 				}
 			}
-
+			System.out.println( );
 		}
 
 	}

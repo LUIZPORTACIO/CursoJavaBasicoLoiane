@@ -25,15 +25,15 @@ public class Questao26 {
 		}
 
 		for (int i = 0; i < vetC.length; i++) {
-			System.out.println("Na posição: " + (i + 1) + "\nO vetor A: " + vetA[i] + "\nO vetor B: " + vetB[i]
-					+ "\nO vetor C: " + vetC[i] + "\n");
+			System.out.println("Na posição: " + (i + 1) + "\nVetor A: " + vetA[i] + "\tVetor B: " + vetB[i]
+					+ "\tVetor C: " + vetC[i] + "\n");
 		}
 	}
 
 	public static void main(String[] args) {
 		int[] vetA = new int[10];
-		int[] vetB = new int[10];
-		int[] vetC = new int[10];
+		int[] vetB = new int[vetA.length];
+		int[] vetC = new int[vetA.length];
 
 		comparandovetores(vetA, vetB, vetC);
 	}

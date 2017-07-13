@@ -13,8 +13,8 @@ public class Questao15 {
 
 			}
 		}
-		System.out.println("\nDos vetores: "+"\nA porcentagem de pares: " + ((cont * 100) / 10) + "\nA porcentagem de impares: "
-				+ (100 - ((cont * 100) / 10)));
+		System.out.println("\nDos vetores: "+"\nA porcentagem de pares: " + ((cont * 100) / vetorA.length) + "\nA porcentagem de impares: "
+				+ (100 - ((cont * 100) / vetorA.length)));
 
 	}
 

@@ -12,12 +12,20 @@ public class Questao23 {
 			vetpares[i] = new Scanner(System.in).nextInt();
 			
 			if (vetpares[i]%2!=0) {
-				System.out.println("Busca encerrada, vetor impar");
+				System.out.println("Busca encerrada, vetor impar "+vetpares[i]+" na posição: "+i);
 				
 				break;
 			}
 		}
-		System.out.println("Busca encerrada.");
+		
+		System.out.print("Vetores pares: ");
+		for (int i = 0; i < vetpares.length; i++) {
+			if (vetpares[i]%2 == 0 && vetpares[i]!=0) {
+				System.out.print(vetpares[i]+ " ");
+				
+			}
+		}
+		System.out.println("\nBusca encerrada.");
 	}
 
 	public static void main(String[] args) {

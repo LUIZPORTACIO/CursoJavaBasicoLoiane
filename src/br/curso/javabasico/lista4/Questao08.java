@@ -5,7 +5,7 @@ public class Questao08 {
 	public static void multiplicarvetores() {
 		int[] vetorA = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 		int[] vetorB = new int[] { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 };
-		int[] vetorC = new int[10];
+		int[] vetorC = new int[vetorA.length];
 
 		for (int i = 0; i < vetorA.length; i++) {
 			vetorC[i] = vetorA[i] * vetorB[i];

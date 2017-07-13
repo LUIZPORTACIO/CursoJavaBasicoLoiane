@@ -37,7 +37,7 @@ public class Questao27 {
 	public static void main(String[] args) {
 
 		int[] vetA = new int[10];
-		char[] vetB = new char[10];
+		char[] vetB = new char[10]; //Pode ser vetor de inteiros, por que de acordo com a tabela Asc, o valor um caractere tem como se equivaler a um inteiro
 
 		conversorvetores(vetA, vetB);
 

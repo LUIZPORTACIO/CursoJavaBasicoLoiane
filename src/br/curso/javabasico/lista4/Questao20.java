@@ -1,5 +1,6 @@
 package br.curso.javabasico.lista4;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Questao20 {
@@ -10,11 +11,13 @@ public class Questao20 {
 		
 		System.out.println("---Tabela de 1 a 20 unidades---");
 		
+		DecimalFormat df = new DecimalFormat("#0.00"); //Formatar para dois digitos decimais
+		
 		for (int i = 0; i < valorreal.length; i++) {
 			
 			valorreal[i] = cotacaodolar*(i+1);
 			
-			System.out.println("O valor de "+(i+1)+" dolares equivalem a "+valorreal[i]+ " reais");
+			System.out.println("O valor de "+(i+1)+" dolares equivalem a "+df.format(valorreal[i])+ " reais");
 		}
 	}
 	
